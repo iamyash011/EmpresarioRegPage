@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  background-image: url("event-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 15, 30, 0.8);
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  height: 100px;
+  object-fit: contain;
+}
+
+.header h1 {
+  margin: 0 auto;
+  font-size: 50px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+
+.logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.formContainer {
+  z-index: 2;
+  max-width: 400px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  text-align: center;
+  color: #fff;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #ddd;
+}
+
+.glowBtn {
+  width: 100%;
+  padding: 14px;
+  background: #00f2ff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00f2ff;
+}
+
+.glowBtn:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 20px #00f2ff, 0 0 40px #00f2ff;
+  transform: scale(1.05);
+}
+
+.footer {
+  z-index: 2;
+  text-align: center;
+  padding: 15px;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.4);
+}
